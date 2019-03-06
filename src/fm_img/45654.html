@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin:0;padding:0;}
+        ul{list-style: none;}
+        a{text-decoration: none;}
+        .carousel{
+            height:557px;
+            overflow:hidden;
+            width:auto;
+            position: relative;
+        }
+        .carousel>ul{
+            width:5709px;
+            overflow: hidden;
+            position: relative;
+        }
+        .carousel>ul>li{float: left;width:1903px;}
+        /*轮播图左右箭头*/
+        .carousel>a.arrow{
+            width:55px;
+            height:55px;
+            border: 2px solid #fff;
+            border-radius:50%;
+
+        }
+        /*轮播图左边箭头*/
+        .carousel>a.left{
+            width:55px;height:55px;background:url(../fm_img/arrow.png) no-repeat left center;
+            opacity: 0.4;
+            position:absolute;
+            top:180px;left: 40px;
+        }
+        /*轮播图右边箭头*/
+        .carousel>a.right{
+            width:55px;height:55px;
+            background:url(../fm_img/arrow.png) no-repeat right center;
+            opacity: 0.4;
+            position:absolute;
+            top:180px;right: 40px;
+        }
+        /*轮播图左右箭头鼠标效果*/
+        .carousel>a.arrow:hover{opacity: 0.7}
+
+        /*轮播图下方轮播圆点*/
+        .carousel>ul.D{
+            width:100%;
+            height:30px;
+            display: flex;
+            justify-content: center;
+            background:rgba(0,0,0,0.5);
+            position: absolute;
+            top:530px;
+        }
+        /*轮播图下方轮播圆点样式*/
+        .carousel>ul.D>li{
+            width:10px;
+            height:10px;
+            background:slategrey;
+            border-radius: 50%;
+            margin:10px 5px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="carousel">
+        <!-- 轮播图图片-->
+        <ul>
+            <li>
+                <a  href="#">
+                    <img class="show" src="../fm_img/1.jpg" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a  href="#">
+                    <img class="show" src="../fm_img/1.jpg" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="../fm_img/4abfce579b3c15348cc10c030d112d8a.jpg" alt=""/></a>
+            </li>
+        </ul>
+        <!-- 轮播图左右箭头-->
+        <a href="#" class="left arrow"></a>
+        <a href="#" class="right arrow"></a>
+        <!-- 轮播图下方轮播圆点-->
+        <ul class="D">
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
